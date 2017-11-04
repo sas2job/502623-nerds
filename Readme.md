@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Алина Ваниева](https://up.htmlacademy.ru/htmlcss/19/user/502623).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Попов](https://github.com/tsergeytovarov).
 
 ---
 
