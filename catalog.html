@@ -48,10 +48,52 @@
 
     <div class="wrapper">
 
-      <section>
+      <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form class="filter" action="test.action.ru" method="get">
-          <!--Здесь будет форма-->
+        <form class="filters-form" action="test.action.ru" method="get">
+          <fieldset class="filters-price">
+            <legend>Стоимость:</legend>
+            <div class="fiters-range">
+              <div class="filters-range-scale"></div>
+              <div class="filters-range-fill"></div>
+              <div class="filres-range-min" tabindex="0"></div>
+              <div class="filres-range-max" tabindex="0"></div>
+            </div>
+            <p>
+              <span>от <input type="text" name="filters-min-price" value="0"></span>
+              <span>до <input type="text" name="filters-max-price" value="15 000"></span>
+            </p>
+          </fieldset>
+          <fieldset class="filters-layout">
+            <legend>Сетка:</legend>
+            <label>
+              <input class="visually-hidden" type="radio" name="adaptive" value="adaptive"> Адаптивная
+            </label>
+            <label>
+              <input class="visually-hidden" type="radio" name="fixed" value="fixed"> Фиксированная
+            </label>
+            <label>
+              <input class="visually-hidden" type="radio" name="rubber" value="rubber"> Резиновая
+            </label>
+          </fieldset>
+          <fieldset class="filters-features">
+            <legend>Особенности:</legend>
+            <label>
+              <input class="visually-hidden" type="checkbox" name="slider" checked> Слайдер
+            </label>
+            <label>
+              <input class="visually-hidden" type="checkbox" name="features"> Блок преимуществ
+            </label>
+            <label>
+              <input class="visually-hidden" type="checkbox" name="news" checked> Новости
+            </label>
+            <label>
+              <input class="visually-hidden" type="checkbox" name="gallery"> Галерея
+            </label>
+            <label>
+              <input class="visually-hidden" type="checkbox" name="cart"> Корзина
+            </label>
+          </fieldset>
         </form>>
       </section>
 
