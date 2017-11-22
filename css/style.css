@@ -120,6 +120,102 @@ img {
   opacity: 0.1;
 }
 
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+
+.header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #eeeeee;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 823px;
+}
+
+.header ul {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  padding-top: 14px;
+  list-style: none;
+}
+
+.header a {
+  padding: 8px 0;
+  text-decoration: none;
+}
+
+.header a:focus,
+.header a:hover {
+  color: #fb565a;
+  outline: none;
+}
+
+.header a:active {
+  opacity: 0.3;
+}
+
+.header .navigation-current {
+  border-bottom: 2px solid #fb565a;
+}
+
+.navigation-home a,
+.navigation-home img {
+  display: block;
+  width: 160px;
+  height: 65px;
+  padding: 0;
+}
+
+.navigation-home a[href]:focus,
+.navigation-home a[href]:hover {
+  opacity: 0.8;
+}
+
+.navigation-home a[href]:active {
+  opacity: 0.3;
+}
+
+.navigation-site {
+  flex-wrap: wrap;
+}
+
+.navigation-site a {
+  margin: 0 23px;
+}
+
+.navigation-user {
+  justify-content: flex-end;
+  min-width: 160px;
+}
+
+.navigation-user-cart::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 25px;
+  vertical-align: middle;
+  background: url(../img/cart.svg) no-repeat 0 0;
+}
+
+
 
 
 
