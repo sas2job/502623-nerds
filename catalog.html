@@ -3,50 +3,59 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс - каталог товаров</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
   <header class="header">
 
-    <nav>
+    <div class="container">
 
-      <div class="navigation-home">
-        <a class="navigation-home-link" href="index.html">
-          <img src="logo.svg" width="160" height="65" alt="Логотип студии «Nerds»">
-          <span class="visually-hidden">Главная</span>
-        </a>
-      </div>
+      <nav class="main-navigation">
 
-      <ul class="navigation-site">
+        <div class="navigation-home">
+          <a class="navigation-home-link" href="index.html">
+            <img src="logo.svg" width="160" height="65" alt="Логотип студии «Nerds»">
+            <span class="visually-hidden">Главная</span>
+          </a>
+        </div>
+
+        <ul class="navigation-site">
+          <li>
+            <a href="#">студия</a>
+          </li>
+          <li>
+            <a href="#">Клиенты</a>
+          </li>
+          <li>
+            <a class="navigation-current">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+
+      </nav>
+
+      <ul class="navigation-user">
         <li>
-          <a href="#">студия</a>
-        </li>
-        <li>
-          <a href="#">Клиенты</a>
-        </li>
-        <li>
-          <a class="navigation-current">Магазин</a>
-        </li>
-        <li>
-          <a href="#">Контакты</a>
+          <a class="navigation-user-cart" href="#">Корзина</a>
         </li>
       </ul>
 
-    </nav>
-
-    <ul class="navigation-user">
-      <li>
-        <a class="navigation-user-cart" href="#">Корзина</a>
-      </li>
-    </ul>
+    </div>
 
   </header>
 
   <main>
 
-    <h1>Магазин готовых шаблонов</h1>
+    <div class="page-title">
+      <h1 class="container">Магазин готовых шаблонов</h1>
+    </div>
 
-    <div class="wrapper">
+    <div class="container">
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -97,9 +106,11 @@
         </form>>
       </section>
 
-      <div class="wrapper">
+      <div class="catalog-wrapper">
 
-        <div class="sorting">
+        <section class="sorting">
+
+          <h2 class="visually-hidden">Сортировка товаров</h2>
 
           <span>Сортировать:</span>
 
@@ -128,7 +139,7 @@
             </li>
           </ul>
 
-        </div>
+        </section>
 
         <section class="catalog">
           <h2 class="visually-hidden">Готовые шаблоны</h2>
@@ -239,24 +250,30 @@
       <img src="img/map.jpg" width="1725" height="808" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
     </section>
 
-    <ul class="social">
-      <li>
-        <a class="social-link social-link-vk">Мы в Вконтакте</a>
-      </li>
-      <li>
-        <a class="social-link social-link-fb">Мы в Facebook</a>
-      </li>
-      <li>
-        <a class="social-link social-link-ins">Мы в Instagram</a>
-      </li>
-    </ul>
+    <div class="container">
 
-    <div class="slogan">
-      <b>Давайте дружить, это выгодно!</b>
-      <span>Скидка 10% для друзей из социальных сетей.</span>
+      <ul class="social">
+        <li>
+          <a class="social-link social-link-vk">Мы в Вконтакте</a>
+        </li>
+        <li>
+          <a class="social-link social-link-fb">Мы в Facebook</a>
+        </li>
+        <li>
+          <a class="social-link social-link-ins">Мы в Instagram</a>
+        </li>
+      </ul>
+
+      <div class="slogan">
+        <b>Давайте дружить, это выгодно!</b>
+        <span>Скидка 10% для друзей из социальных сетей.</span>
+      </div>
+
     </div>
 
   </footer>
+
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 </body>
 </html>
