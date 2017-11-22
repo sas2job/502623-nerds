@@ -484,9 +484,54 @@ img {
   font-size: 27px;
 }
 
+/*  #PARTNERS  -----------------------*/
 
+.clients {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 182px;
+  margin-bottom: 80px;
+  border-bottom: 2px solid #eeeeee;
+}
 
+.clients::before {
+  content: "";
+  position: absolute;
+  top: 65px;
+  left: 279px;
+  width: 2px;
+  height: 52px;
+  background-color: #eeeeee;
+  box-shadow:
+    300px 0 0 #eeeeee,
+    600px 0 0 #eeeeee;
+}
 
-*, *::before, *::after {
+.clients a {
+  opacity: 0.2;
+}
+
+.clients a:focus,
+.clients a:hover {
+  opacity: 1;
   outline: none;
 }
+
+.clients a:active {
+  opacity: 0.1;
+}
+
+.clients img {
+  display: block;
+}
+
+
+
+
+
+/**, *::before, *::after {
+  outline: none;
+}*/
