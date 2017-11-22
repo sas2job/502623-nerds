@@ -548,6 +548,24 @@ img {
 
 
 /*------------------------------------*\
+    #INNER-CONTENT
+\*------------------------------------*/
+
+.page-title {
+  padding: 77px 0 105px;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.page-title h1 {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  text-align: center;
+}
+
+
+/*------------------------------------*\
     #FOOTER
 \*------------------------------------*/
 
