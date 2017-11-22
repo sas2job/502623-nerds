@@ -220,7 +220,7 @@ img {
     #INDEX-CONTENT
 \*------------------------------------*/
 
-/*  #PROMO BLOCK  --------------------*/
+/*  #SLIDER  -------------------------*/
 
 .slider-wrapper {
   background-color: #eeeeee;
@@ -310,6 +310,82 @@ img {
   height: 8px;
   border: 2px solid #c1c1c1;
   border-radius: 50%;
+}
+
+/*  #PRODUCTS  -----------------------*/
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 80px;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.products-item {
+  max-width: 300px;
+  margin-right: 60px;
+  margin-bottom: 80px;
+}
+
+.products-item::before {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 146px;
+  margin-bottom: 25px;
+}
+
+.products-sites::before {
+  content: url(../img/illustration-1.png);
+}
+
+.products-applications::before {
+  content: url(../img/illustration-2.png);
+}
+.products-presentations::before {
+  content: url(../img/illustration-3.png);
+}
+
+.products-item h3 {
+  margin: 0;
+  margin-bottom: 17px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.products-item p {
+  max-width: 250px;
+  margin-bottom: 32px;
+}
+
+.products-applications .button {
+  background-color: #00ca74;
+}
+
+.products-applications .button:focus,
+.products-applications .button:hover {
+  background-color: #00bc6c;
+}
+
+.products-applications .button:active {
+  background-color: #00aa62;
+}
+
+.products-presentations .button {
+  background-color: #efc84a;
+}
+
+.products-presentations .button:focus,
+.products-presentations .button:hover {
+  background-color: #eab534;
+}
+
+.products-presentations .button:active {
+  background-color: #e5a722;
 }
 
 
