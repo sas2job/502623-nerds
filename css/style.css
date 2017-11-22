@@ -587,6 +587,90 @@ img {
   display: none;
 }
 
+/*  #SOCIAL  -------------------------*/
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 20px;
+}
+
+.social-list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  height: 78px;
+  margin-right: 12px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+}
+
+.social-link:focus,
+.social-link:hover {
+  background-color: #e74246;
+  outline: none;
+}
+
+.social-link:active {
+  background-color: #d7373b;
+}
+
+.social-link:active::before {
+  opacity: 0.3;
+}
+
+.social-link::before {
+  content: "";
+  width: 78px;
+  height: 78px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.social-link-vk::before {
+  background-image: url(../img/vk.svg);
+  background-size: 26px 15px;
+}
+
+.social-link-fb::before {
+  background-image: url(../img/fb.svg);
+  background-size: 12px 22px;
+}
+
+.social-link-ins::before {
+  background-image: url(../img/ins.svg);
+  background-size: 21px 21px;
+}
+
+.social .slogan {
+  flex-grow: 1;
+  padding-left: 130px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
+
+.social b {
+  display: block;
+  margin-bottom: 11px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+
+
+
 
 
 /**, *::before, *::after {
