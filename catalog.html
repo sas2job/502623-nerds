@@ -283,6 +283,28 @@
 
   </footer>
 
+  <div class="modal">
+    <section class="modal-message">
+      <h2>Напишите нам</h2>
+      <form action="test.action.ru" method="post">
+        <label>
+          Ваше имя:
+          <input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+        </label>
+        <label>
+          Ваш e-mail:
+          <input type="email" name="e-mail" placeholder="Для отправки ответа">
+        </label>
+        <span>Текст письма:</span>
+        <textarea>В свободной форме</textarea>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="button-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
+  </div>
+
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 </body>
