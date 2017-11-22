@@ -529,6 +529,63 @@ img {
 }
 
 
+/*------------------------------------*\
+    #FOOTER
+\*------------------------------------*/
+
+/*  #CONTACTS  -----------------------*/
+
+.contacts {
+  min-width: 100%;
+  min-height: 416px;
+  background-image: url(../img/map.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.contacts-map {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.contacts .container {
+  position: relative;
+  min-height: 416px;
+}
+
+.contacts-text {
+  position: absolute;
+  top: 54px;
+  left: 20px;
+  width: 318px;
+  margin: 0;
+  padding: 50px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+  background-color: #ffffff;
+}
+
+.contacts-text b {
+  display: block;
+  margin-bottom: 23px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.contacts-text .button {
+  width: 100%;
+  margin-top: 22px;
+}
+
+.contacts img {
+  display: none;
+}
 
 
 
