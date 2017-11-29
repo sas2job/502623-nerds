@@ -946,6 +946,61 @@ img {
   color: #ffffff;
 }
 
+/*  #CATALOG-PAGINATION  -------------*/
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 27px;
+  margin-bottom: 4px;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination a {
+  display: block;
+  width: 50px;
+  margin-right: 11px;
+  padding: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  border-radius: 3px;
+}
+
+.pagination a[href] {
+  background-color: #eeeeee;
+}
+
+.pagination a:focus,
+.pagination a[href]:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination a[href]:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #d5d5d5;
+  box-shadow: inset 0px 3px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.pagination-prev,
+.pagination-next {
+  min-width: 260px;
+}
+
+.pagination-prev:not([href]),
+.pagination-next:not([href])  {
+  display: none;
+}
+
+.pagination .pagination-current {
+  padding: 11px 14px;
+  border: 3px solid #eeeeee;
+}
+
 /*------------------------------------*\
     #FOOTER
 \*------------------------------------*/
