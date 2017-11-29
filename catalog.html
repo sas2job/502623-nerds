@@ -55,55 +55,56 @@
       <h1 class="container">Магазин готовых шаблонов</h1>
     </div>
 
-    <div class="container">
+    <div class="container catalog-container">
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form class="filters-form" action="test.action.ru" method="get">
+        <form class="filters-form" action="https://eho.htmlacademy.ru" method="get">
+
           <fieldset class="filters-price">
             <legend>Стоимость:</legend>
-            <div class="fiters-range">
+            <div class="filters-range">
               <div class="filters-range-scale"></div>
               <div class="filters-range-fill"></div>
-              <div class="filres-range-min" tabindex="0"></div>
-              <div class="filres-range-max" tabindex="0"></div>
+              <button class="filters-range-min">
+                <span class="visually-hidden">Минимальная стоимость</span>
+              </button>
+              <button class="filters-range-max">
+                <span class="visually-hidden">Максимальная стоимость</span>
+              </button>
             </div>
             <p>
-              <span>от <input type="text" name="filters-min-price" value="0"></span>
-              <span>до <input type="text" name="filters-max-price" value="15 000"></span>
+              <label>от<input type="text" name="filters-min-price" value="0"></label>
+              <label>до<input type="text" name="filters-max-price" value="15 000"></label>
             </p>
           </fieldset>
+
           <fieldset class="filters-layout">
             <legend>Сетка:</legend>
-            <label>
-              <input class="visually-hidden" type="radio" name="adaptive" value="adaptive"> Адаптивная
-            </label>
-            <label>
-              <input class="visually-hidden" type="radio" name="fixed" value="fixed"> Фиксированная
-            </label>
-            <label>
-              <input class="visually-hidden" type="radio" name="rubber" value="rubber"> Резиновая
-            </label>
+            <input id="layout-adaptive" type="radio" name="layout" value="adaptive" checked>
+            <label for="layout-adaptive">Адаптивная</label>
+            <input id="layout-fixed" type="radio" name="layout" value="fixed">
+            <label for="layout-fixed">Фиксированная</label>
+            <input id="layout-rubber" type="radio" name="layout" value="rubber" disabled>
+            <label for="layout-rubber">Резиновая</label>
           </fieldset>
+
           <fieldset class="filters-features">
             <legend>Особенности:</legend>
-            <label>
-              <input class="visually-hidden" type="checkbox" name="slider" checked> Слайдер
-            </label>
-            <label>
-              <input class="visually-hidden" type="checkbox" name="features"> Блок преимуществ
-            </label>
-            <label>
-              <input class="visually-hidden" type="checkbox" name="news" checked> Новости
-            </label>
-            <label>
-              <input class="visually-hidden" type="checkbox" name="gallery"> Галерея
-            </label>
-            <label>
-              <input class="visually-hidden" type="checkbox" name="cart"> Корзина
-            </label>
+            <input id="features-slider" type="checkbox" name="slider" checked>
+            <label for="features-slider">Слайдер</label>
+            <input id="features-features" type="checkbox" name="features">
+            <label for="features-features">Блок преимуществ</label>
+            <input id="features-news" type="checkbox" name="news" checked>
+            <label for="features-news">Новости</label>
+            <input id="features-gallery" type="checkbox" name="gallery">
+            <label for="features-gallery">Галерея</label>
+            <input id="features-cart" type="checkbox" name="cart">
+            <label for="features-cart">Корзина</label>
           </fieldset>
-        </form>>
+
+          <button class="button" type="submit">Показать</button>
+        </form>
       </section>
 
       <div class="catalog-wrapper">
@@ -112,7 +113,7 @@
 
           <h2 class="visually-hidden">Сортировка товаров</h2>
 
-          <span>Сортировать:</span>
+          <b>Сортировать:</b>
 
           <ul class="sorting-links">
             <li>
@@ -128,12 +129,12 @@
 
           <ul class="sorting-links-toggle">
             <li>
-              <a class="sorting-current">
+              <a class="descending sorting-current">
                 <span class="visually-hidden">По убыванию</span>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a class="ascending" href="#">
                 <span class="visually-hidden">По возрастанию</span>
               </a>
             </li>
