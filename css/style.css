@@ -770,7 +770,93 @@ img {
   background-color: #d5d5d5;
 }
 
+/*  #CATALOG  ------------------------*/
 
+.catalog-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.catalog-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 760px;
+}
+
+/*  #SOORTING  -----------------------*/
+
+.sorting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.sorting ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sorting b {
+  flex-grow: 1;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.sorting a {
+  padding: 0 13px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  opacity: 0.3;
+}
+
+.sorting a:focus,
+.sorting a:hover {
+  color: #000000;
+  opacity: 0.6;
+  outline: none;
+}
+
+.sorting a:active,
+.sorting a.active {
+  opacity: 1;
+}
+
+.sorting .sorting-links-toggle {
+  margin-left: 17px;
+}
+
+.sorting-links-toggle a {
+  display: block;
+  margin-left: 17px;
+  padding: 0;
+}
+
+.sorting .descending {
+  border: 6px solid transparent;
+  border-top: 10px solid #231f20;
+  border-bottom: none;
+}
+
+.sorting .ascending {
+  border: 6px solid transparent;
+  border-bottom: 10px solid #231f20;
+  border-top: none;
+}
 
 /*------------------------------------*\
     #FOOTER
