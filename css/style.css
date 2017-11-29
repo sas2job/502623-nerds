@@ -1,7 +1,3 @@
-*, *::before, *::after {
-  outline: 1px dashed grey;
-}
-
 html,
 body {
   margin: 0;
@@ -832,7 +828,7 @@ img {
 }
 
 .sorting a:active,
-.sorting a.active {
+.sorting a:not([href]) {
   opacity: 1;
 }
 
@@ -1241,9 +1237,4 @@ img {
   margin-bottom: 12px;
   padding-left: 82px;
   padding-right: 82px;
-}
-
-
-*, *::before, *::after {
-  outline: none;
 }
