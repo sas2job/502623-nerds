@@ -22,6 +22,7 @@ body {
 a {
   font: inherit;
   color: inherit;
+  transition-duration: 0.15s;
 }
 
 a:focus,
@@ -75,7 +76,8 @@ img {
   background-color: #fb565a;
   border: none;
   border-radius: 4px;
-  outline: none;
+  cursor: pointer;
+  transition-duration: 0.15s;
 }
 
 .button:focus,
@@ -101,6 +103,7 @@ img {
   opacity: 0.3;
   cursor: pointer;
   transform: rotate(45deg);
+  transition-duration: 0.15s;
 }
 
 .button-close::before,
@@ -127,6 +130,7 @@ img {
 .button-close:focus,
 .button-close:hover {
   opacity: 1;
+  transform: rotate(135deg);
 }
 
 .button-close:active {
@@ -235,32 +239,43 @@ img {
 
 /*  #SLIDER  -------------------------*/
 
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-content {
+  0% {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-button {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .slider-wrapper {
   background-color: #eeeeee;
 }
 
 .slider {
   position: relative;
-}
-
-.slider b {
-  display: block;
-  margin-bottom: 27px;
-  font-weight: 500;
-  font-size: 55px;
-  line-height: 55px;
-  color: #000000;
-}
-
-.slider p {
-  max-width: 415px;
-  margin-top: 0;
-  margin-bottom: 38px;
-}
-
-.slider .button {
-  padding-right: 55px;
-  padding-left: 54px;
 }
 
 .slider-item {
@@ -270,6 +285,8 @@ img {
   padding: 77px 50% 80px 0;
   background-repeat: no-repeat;
   background-position: right bottom;
+  animation-name: slide;
+  animation-duration: 1.2s;
 }
 
 .slide-1:checked ~ .slider-item-1,
@@ -289,6 +306,38 @@ img {
 
 .slider-item-3 {
   background-image: url(../img/slide3.png);
+}
+
+.slider b {
+  display: block;
+  margin-bottom: 27px;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: #000000;
+  animation-name: slide-content;
+  animation-duration: 0.3s;
+  animation-delay: 0.2s;
+  animation-fill-mode: backwards;
+}
+
+.slider p {
+  max-width: 415px;
+  margin-top: 0;
+  margin-bottom: 38px;
+  animation-name: slide-content;
+  animation-duration: 0.3s;
+  animation-delay: 0.3s;
+  animation-fill-mode: backwards;
+}
+
+.slider .button {
+  padding-right: 55px;
+  padding-left: 54px;
+  animation-name: slide-button;
+  animation-duration: 0.2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
 }
 
 .slider-control {
