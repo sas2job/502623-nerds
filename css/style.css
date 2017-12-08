@@ -17,7 +17,6 @@ body {
 *:before,
 *:after {
   box-sizing: inherit;
-  transition-duration: inherit;
 }
 
 a {
@@ -1004,30 +1003,31 @@ img {
 /*  #CONTACTS  -----------------------*/
 
 .contacts {
-  min-width: 100%;
-  min-height: 416px;
+  position: relative;
   background-image: url(../img/map.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.contacts-map {
+.contacts-map-interactive {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .contacts .container {
   position: relative;
-  min-height: 416px;
+  padding-top: 53px;
+  padding-bottom: 53px;
 }
 
 .contacts-text {
-  position: absolute;
-  top: 54px;
-  left: 20px;
+  position: relative;
+  z-index: 10;
   width: 318px;
   margin: 0;
   padding: 50px;
@@ -1051,7 +1051,7 @@ img {
   margin-top: 22px;
 }
 
-.contacts img {
+.contacts-map {
   display: none;
 }
 
@@ -1078,7 +1078,7 @@ img {
   align-items: center;
   width: 78px;
   height: 78px;
-  margin-right: 12px;
+  margin-right: 13px;
   background-color: #e1e1e1;
   border-radius: 50%;
 }
@@ -1122,7 +1122,7 @@ img {
 
 .social .slogan {
   flex-grow: 1;
-  padding-left: 130px;
+  padding-left: 127px;
   font-size: 16px;
   line-height: 22px;
   color: #444444;
