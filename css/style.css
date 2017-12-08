@@ -76,6 +76,7 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  vertical-align: baseline;
   color: #ffffff;
   background-color: #fb565a;
   border: none;
@@ -442,6 +443,7 @@ img {
   width: 18px;
   height: 18px;
   margin: 0 9px;
+  vertical-align: baseline;
   background: #ffffff;
   border-radius: 50%;
   cursor: pointer;
@@ -1207,6 +1209,7 @@ img {
 
 .contacts {
   position: relative;
+  background-color: #edeae3;
   background-image: url(../img/map.png);
   background-size: cover;
   background-repeat: no-repeat;
