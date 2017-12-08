@@ -181,7 +181,6 @@ img {
 .header a:focus,
 .header a:hover {
   color: #fb565a;
-  outline: none;
 }
 
 .header a:active {
@@ -557,9 +556,14 @@ img {
   min-height: 182px;
   margin-bottom: 80px;
   border-bottom: 2px solid #eeeeee;
+  background
 }
 
-.clients::before {
+.clients a {
+  position: relative;
+}
+
+.clients a:not(:last-child)::before {
   content: "";
   position: absolute;
   top: 65px;
@@ -567,27 +571,20 @@ img {
   width: 2px;
   height: 52px;
   background-color: #eeeeee;
-  box-shadow:
-    300px 0 0 #eeeeee,
-    600px 0 0 #eeeeee;
-}
-
-.clients a {
-  opacity: 0.2;
-}
-
-.clients a:focus,
-.clients a:hover {
-  opacity: 1;
-  outline: none;
-}
-
-.clients a:active {
-  opacity: 0.1;
 }
 
 .clients img {
   display: block;
+  opacity: 0.2;
+  transition-duration: 0.15s;
+}
+
+.clients img:hover {
+  opacity: 1;
+}
+
+.clients img:active {
+  opacity: 0.1;
 }
 
 
@@ -958,6 +955,7 @@ img {
   color: #666666;
   background-color: #eeeeee;
   opacity: 0;
+  transition-duration: 0.15s;
 }
 
 .catalog-item:focus .catalog-item-hover,
