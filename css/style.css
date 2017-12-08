@@ -1189,15 +1189,50 @@ img {
     #MODAL-CONTENT
 \*------------------------------------*/
 
+@keyframes modal-overlay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes modal {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes modal-error {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1000;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.1);
+  animation-name: modal-overlay;
+  animation-duration: 0.4s;
 }
 
 .modal-off {
@@ -1214,6 +1249,13 @@ img {
   font-size: 16px;
   line-height: 18px;
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+  animation-name: modal;
+  animation-duration: 0.4s;
+}
+
+.modal .modal-error {
+  animation-name: modal-error;
+  animation-duration: 0.4s;
 }
 
 .modal input,
@@ -1247,6 +1289,7 @@ img {
 .modal .button-close {
   top: 73px;
   right: 87px;
+  outline: none;
 }
 
 /*  #MODAL-MESSAGE  ------------------*/
